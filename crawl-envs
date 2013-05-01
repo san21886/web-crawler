@@ -1,0 +1,8 @@
+#!/bin/bash
+
+CRAWL_HOME=
+export MY_NUTCH_HOME=$CRAWL_HOME/apache-nutch-1.6
+export CRAWL_CONF_DIR=$CRAWL_HOME/crawl-configs/
+export CRAWL_DATA_DIR=$CRAWL_HOME/crawl-dirs/
+export JAVA_HOME=$CRAWL_HOME/jdk1.6.0_31
+export PATH=$JAVA_HOME/bin:$PATH

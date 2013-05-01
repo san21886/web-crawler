@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<!-- Put site-specific property overrides in this file. -->
+
+<configuration>
+	<property>
+		<name>http.agent.name</name>
+		<value>Santy Spider</value>
+	</property>
+
+	<property>
+		<name>http.robots.403.allow</name>
+		<value>true</value>
+		<description>Some servers return HTTP status 403 (Forbidden) if
+			/robots.txt doesn't exist. This should probably mean that we are
+			allowed to crawl the site nonetheless. If this is set to false,
+			then such sites will be treated as forbidden.</description>
+	</property>
+
+	<property>
+		<name>http.timeout</name>
+		<value>10000</value>
+		<description>The default network timeout, in milliseconds.</description>
+	</property>
+
+	<property>
+		<name>generate.max.count</name>
+		<value>-1</value>
+		<description>The maximum number of urls in a single
+			fetchlist.  -1 if unlimited. The urls are counted according
+			to the value of the parameter generator.count.mode.
+		</description>
+	</property>
+
+	<property>
+		<name>parser.character.encoding.default</name>
+		<value>utf-8</value>
+		<description>The character encoding to fall back to when no other information
+			is available</description>
+	</property>
+</configuration>
